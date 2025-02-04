@@ -47,13 +47,19 @@
             document.getElementById('equal').innerHTML= ' is 25 greater than 6' + A > B;">
              Answer </button>
         </div>
-
-        <div class="operator" id="logical">
+ <div class="operator" id="logical">
             <h4>Logical Operators</h4>
-            <p></p>
-            <p></p>
+            <p id="answer1">True or False:</p>
+            <p id="answer2">True or False:</p>
+             <button type="button" class="btn btn-info" onclick="
+            var A=25;
+            var B=6;
+            document.getElementById('answer1').innerHTML= '  (a <= b) && (a >= b) '
+            document.getElementById('answer2').innerHTML= ' (a != b) || (a == b)'  ">
+             Answer </button>
+        </div>
         </div>
     </div>
-
-</body>
-</html>
+<button type="button" onClick="window.location.reload()">
+      REFRESH
+</button>
